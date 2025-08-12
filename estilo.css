@@ -1,0 +1,92 @@
+header{
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('coffe.jpg') center/cover no-repeat;
+transform: scale(1.0);
+  overflow: hidden;
+  width: auto;
+  height: 640px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
+  color: #f7e300e8;
+  font-size: 3rem;
+  font-weight: 700px;                    
+  margin: 40px 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  letter-spacing: 1.5px;
+  margin-left: 70%;
+  font-size: 60px;
+}
+header p{
+  font-family: "Dancing Script", cursive;
+margin-left: 70%;
+color: #f7e300e8;
+font-size: 25px;
+}
+
+body{
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('body.png') center/cover no-repeat;
+
+
+}
+.producto {
+  width: 250px;
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.conteiner img:hover{
+   transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+
+.producto .nota {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+#buscar {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.producto {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.boton-glosario {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #dfc902;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    transition: background-color 0.3s;
+    margin-left: 89%;
+
+}
+
+.boton-glosario:hover {
+    background-color: #f8cf04;
+}
