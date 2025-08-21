@@ -23,6 +23,7 @@ header h1 {
   margin-left: 70%;
   font-size: 60px;
 }
+
 header p{
   font-family: "Dancing Script", cursive;
 margin-left: 70%;
@@ -32,8 +33,7 @@ font-size: 25px;
 
 body{
 background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-              url('body.png') center/cover no-repeat;
-
+ url('body.png') center/cover no-repeat;
 
 }
 .producto {
@@ -41,40 +41,46 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   text-align: center;
   margin: 20px;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #e6c700;
 }
 
 .producto img {
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 150px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+.conteiner {
+  display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(3, auto);
+      gap: 15px;
+      margin: 20px auto;
+      padding: 10px;
+}
+
 .conteiner img:hover{
    transform: scale(1.1);
   transition: transform 0.3s;
 }
 
 
-.producto .nota {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #555;
-}
-
-#buscar {
-  padding: 8px;
-  margin-bottom: 15px;
-  width: 100%;
-  font-size: 16px;
-}
+.producto  .nota {
+    max-height: 100px;
+    overflow: hidden; 
+    transition: max-height 0.3s ease;
+    color: #f8cf04;
+  }
+  .producto.nota.expandida {
+    max-height: 1000px;
+  }
 
 .producto {
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-.boton-glosario {
+a button{
     display: inline-block;
     padding: 10px 30px;
     background-color: #dfc902;
@@ -87,6 +93,6 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 
 }
 
-.boton-glosario:hover {
+a button:hover {
     background-color: #f8cf04;
 }
